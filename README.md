@@ -6,7 +6,7 @@ command-line arguments: threshold and limit.
 For each input value:
 1. Subtract threshold from it, clipped at 0 (values <= threshold produce 0).
 2. Cap the result against the remaining room under the remaining limit. 
-   Once the running total reaches limit, all further outputs are 0.
+   Once the running total reaches the limit, all further outputs are 0.
 
 After processing all inputs, a final line is printed(summedResult). It will never exceed the limit.
 
@@ -20,4 +20,4 @@ The solution was validated against all examples provided in the problem specific
 
 ## Run
 
-    ./compute <threshold> <limit> < input.txt>
+    ./compute <threshold> <limit> < input.txt
